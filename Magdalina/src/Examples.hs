@@ -98,6 +98,10 @@ digits str = [ch | ch <- str, ch >= '0', ch <= '9']
 
 allEven x = x == [a | a <- x, even a]
 
+qsort [] = []
+qsort (x:xs) = qsort less ++ [x] ++ qsort more
+     where less = filter (<x) xs
+           more = filter (>=x) xs
 
 
 
