@@ -103,5 +103,8 @@ qsort (x:xs) = qsort less ++ [x] ++ qsort more
      where less = filter (<x) xs
            more = filter (>=x) xs
 
+-- function square
+square :: Int -> Int
+square x = x * x
 
 
