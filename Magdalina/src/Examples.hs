@@ -15,6 +15,8 @@ add (x, y) = x + y
 add:: Int -> Int -> Int
 add x y = x+y
 
+mult :: Int -> Int -> Int ->Int
+mult x y z = x*y*z
 
 max3 :: Int -> Int -> Int ->Int
 max3 x y z
